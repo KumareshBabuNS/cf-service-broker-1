@@ -7,6 +7,7 @@ import model.Catalog;
 import model.Plan;
 import model.Service;
 import model.ServiceBindResponse;
+import model.ServiceRequest;
 
 import org.springframework.stereotype.Component;
 
@@ -42,23 +43,23 @@ public class ServiceBrokerImpl implements ServiceBroker {
     	return catalog;
     }
 	
-    public Map<String,String> putServiceInstance(String id) {
+    public Map<String,String> putServiceInstance(String id, ServiceRequest serviceRequest) {
     	//	TODO: Implement
     	// Optionally provide "dashboard_url" as key and a URL pointing to a monitor.
     	return null;
     }
 
-    public void deleteServiceInstance(String id) {
+    public void deleteServiceInstance(String id, ServiceRequest serviceRequest) {
     	//	TODO: Implement
     }
 
-	public ServiceBindResponse createServiceBinding(String instanceId, String id) {
+	public ServiceBindResponse createServiceBinding(String instanceId, String id, ServiceRequest serviceRequest) {
     	//	TODO: Implement
 		return new ServiceBindResponse();
 	}
 
 	@Override
-	public void deleteServiceBinding(String instanceId, String id) {
+	public void deleteServiceBinding(String instanceId, String id, ServiceRequest serviceRequest) {
     	//	TODO: Implement
 	}	
     
