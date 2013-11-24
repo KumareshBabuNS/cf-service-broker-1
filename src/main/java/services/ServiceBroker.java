@@ -12,7 +12,7 @@ public interface ServiceBroker {
     
     public Map<String,String> putServiceInstance(String id, ServiceRequest serviceRequest);
 
-    public void deleteServiceInstance(String id, ServiceRequest serviceRequest);
+    public void deleteServiceInstance(String id, String serviceId, String planId);
     
     public ServiceBindResponse createServiceBinding(String instanceId, String id, ServiceRequest serviceRequest);
     
